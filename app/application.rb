@@ -1,5 +1,5 @@
 require 'rack'
- 
+require 'pry'
 # Something that responds to call, that's what Rack demands
 class Application
   def call(env)
@@ -7,7 +7,8 @@ class Application
   end
  
   def pretty_response
-    (Time.now.to_i < 12:00:00)?  ["<em>Good Morning!</em>"] : ["<em>Good Afternoon!</em>"]
+    binding.pry
+    (Time.now.to_i < 12:)?  ["<em>Good Morning!</em>"] : ["<em>Good Afternoon!</em>"]
   end
 end
  
