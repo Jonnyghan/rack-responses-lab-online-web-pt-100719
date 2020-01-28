@@ -8,7 +8,7 @@ class Application
  
   def pretty_response
     binding.pry
-    (Time.now.to_i < 12:)?  ["<em>Good Morning!</em>"] : ["<em>Good Afternoon!</em>"]
+    (Time.now.to_i < 12)?  ["<em>Good Morning!</em>"] : ["<em>Good Afternoon!</em>"]
   end
 end
  
