@@ -7,7 +7,7 @@ class Application
   end
  
   def pretty_response
-    (Time.now.to_i < 12:00:00).zero? ?  ["<em>H</em>"] : ["<strong>Hello</strong>"]
+    Time.now.to_i < 12:00:00).zero? ?  ["<em>Good Morning!</em>"] : ["<em>Good Afternoon!</em>"]
   end
 end
  
